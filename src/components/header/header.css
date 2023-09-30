@@ -1,0 +1,90 @@
+
+.header{
+    background-color: var(--main-bg-color-white);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid gray;
+
+}
+
+.menuIconContainer{
+    color: gray;
+    margin: 2rem;
+    font-size: 20px;
+}
+
+.logo__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    border: 2px solid rebeccapurple;
+    width: 38px;
+    height: 38px;
+    font-size: 25px;
+    background-color: white;
+    color: rebeccapurple;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.logo:hover{
+    background-color: rebeccapurple;
+    color: white;
+    border: 2px solid white;
+    animation: rotateBorder 4s linear infinite;
+    border: 5px solid white;
+}
+
+/* .logo::before,
+.logo::after {
+  content: "";
+  position: absolute;
+  top: -2px; 
+  left: -2px; 
+  right: -2px; 
+  bottom: -2px; 
+  border: 1.4px solid rebeccapurple;
+  border-radius: 50%;
+};
+
+.logo::before {
+    animation: rotateBorder 7s linear infinite;
+} */
+
+.blog{
+    margin: 2rem;
+}
+
+@keyframes rotateBorder {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media screen and (max-width:480px){
+    .logo{
+        border: 1px solid rebeccapurple;
+        width: 35px;
+        height: 35px;
+        background-color: white;
+        color: rebeccapurple;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        margin-right: 1rem;
+        font-size: 23px;
+    }
+  }

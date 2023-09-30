@@ -1,0 +1,62 @@
+sidebar__wrapper{
+    position: relative;
+    flex: 1.5;
+}
+.sidebar{
+    flex: 1.5;
+    height: 100%;
+    width: 100px;
+    background-color:#ffffff;
+    font-size: 15px;
+    transition: all 0.5s;
+    position: fixed;
+    box-shadow: 3px 9px 20px #f8f8f8;
+    border-right: 1px solid gray;
+    margin-top: 4rem;
+}
+
+.sidebar__list__container, .sidebar__social__icons__container{
+    padding-left: 5px;
+}
+
+.sidebar__close{
+    margin-left: -100px;
+    transition: all 0.5s;
+    height: 100%;
+    margin-top: 4rem;
+}
+
+.sidebar__list__container{
+    list-style-type: none;
+}
+
+.sidebar__list__item{
+    border-bottom: 1px solid rebeccapurple;
+
+}
+
+.sidebar__social__icons__container{
+    list-style-type: none;
+}
+
+@media screen and (max-width:480px){
+    .sidebar{
+        margin-left: -100px;
+        transition: all 0.5s;
+    }
+
+    .sidebar__close{
+        margin-left: 1px;
+        font-size: 15px;
+        background-color:#ffffff;
+        width: 70px;
+        height: 100%;
+        position: fixed;
+        z-index: 999;
+        border-right: 1px solid gray;
+        transition: all 0.5s;
+        
+
+    }
+
+}
